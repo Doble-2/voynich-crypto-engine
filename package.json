@@ -1,6 +1,6 @@
 {
   "name": "@doble2/voynich-crypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A deterministic steganographic engine based on binary entropy injection and natural dialect simulation using reverse Huffman trees.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
