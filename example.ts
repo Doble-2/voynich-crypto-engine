@@ -18,11 +18,11 @@ const customFrequencies = {
   'v': 5, 'f': 5, 'b': 5, 'z': 2, 'x': 2, 'w': 1, 'j': 1
 };
 
-engine.setFormatter(new CurrierADialect(customFrequencies));
+engine.setFormatter(new CurrierADialect());
 
 // 2. Definir el mensaje
 const mensajeOriginal = `
-¡Hola, Voynich! Este es un mensaje secreto que vamos a cifrar usando el motor de VoynichCrypto.
+¡Hola, mundo! Este es un mensaje secreto que vamos a ofuscar usando el Manuscrito Voynich.
 `;
 console.log("==========================================");
 console.log("🔓 MENSAJE ORIGINAL:", mensajeOriginal);

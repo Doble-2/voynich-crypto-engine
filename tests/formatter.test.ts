@@ -33,8 +33,8 @@ describe('CurrierADialect Formatter', () => {
     const originalBuffer = new Uint8Array([1, 2, 3]);
     const validText = formatter.encode(originalBuffer);
     
-    // Inyectamos texto que no es parte del alfabeto de Voynich/Huffman que definimos o saltos de línea extra
-    const corruptText = "¡BASURA_AQUÍ!" + validText + " MÁS_\nBASURA";
+    // Inyectamos texto que no es parte del alfabeto de Voynich/Huffman separado por espacios
+    const corruptText = "¡BASURA_AQUÍ! " + validText + " MÁS_ \n BASURA";
     
     const decodedBuffer = formatter.decode(corruptText);
     expect(decodedBuffer).toEqual(originalBuffer);
