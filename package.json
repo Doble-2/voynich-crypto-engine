@@ -1,0 +1,42 @@
+{
+  "name": "@doble2/voynich-crypto",
+  "version": "1.0.0",
+  "description": "A deterministic steganographic engine based on binary entropy injection and natural dialect simulation using reverse Huffman trees.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "steganography",
+    "cryptography",
+    "huffman",
+    "entropy",
+    "voynich",
+    "react",
+    "hook"
+  ],
+  "author": "doble2",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@types/react": "^19.2.14",
+    "framer-motion": "^12.34.5",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react": "^19.2.4",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
